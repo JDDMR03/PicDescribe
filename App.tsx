@@ -33,7 +33,7 @@ const App = () => {
       );
       const newCaption = azureVisionResponse.data.description.captions[0].text;
       setCaption(newCaption);
-      Tts.speak(newCaption); // Hacer que la aplicación hable el contenido del título
+      Tts.speak(newCaption);
     } catch (error) {
       setCaption("No avalibe to analyze the image");
       Tts.speak("No avalibe to analyze the image");
